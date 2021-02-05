@@ -1,0 +1,147 @@
+html {
+    height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body  {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+}
+
+#loading-mask {
+    display: none;
+}
+
+/* Language */
+
+.en {
+    display: block;
+}
+
+.de {
+    display: none;
+}
+
+/* Header */
+
+header {
+    color: #f2f2f2;
+    background-color: #333;
+    text-align: center;
+    position: relative;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#language-image img {
+    width: 100%;
+}
+
+.headerButton {
+    margin: 2%;
+    width: 5%;
+}
+
+#ssbLogo {
+    width: 25%;
+}
+
+#navButton {
+    max-width: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Main */
+
+#main {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1%;
+    border: 3px solid #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
+#main .container {
+    padding: 0 20px
+}
+
+.list-divider-pipe {
+    margin: 0;
+    padding: 0
+}
+
+.list-divider-pipe li {
+    display: inline-block
+}
+
+.list-divider-pipe li+li::before {
+    content: "|";
+    padding: 0 .3em 0 .1em;
+    color: #999
+}
+
+@media screen and (max-width: 480px) {
+    nav .list-divider-pipe {
+        margin-bottom:1rem;
+        overflow: hidden
+    }
+
+    nav .list-divider-pipe li+li::before {
+        display: none
+    }
+}
+
+a {
+    color: #668178;
+}
+a:link,a:active {
+    color: #f2f2f2;
+    text-decoration: none;
+    border-radius: 2px
+}
+
+nav a:hover {
+    color: #333;
+    background-color: #f2f2f2;
+}
+
+a:hover code {
+    background-color: transparent;
+    color: #fff
+}

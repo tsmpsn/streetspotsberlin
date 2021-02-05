@@ -1,0 +1,63 @@
+﻿﻿﻿<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>welcome to streetspotsberlin</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <script src="/js/main.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <header>
+            <div id="header">
+                <div class="headerButton">
+                    <a id="language-image" onClick="changeLanguage(window.location.pathname)">
+                        <img src="/images/en.jpg" alt="en flag"/>
+                    </a>
+                </div>
+                <div>
+                    <img id="ssbLogo" src="/images/logo.png" alt="streetspotsberlin"/>
+                </div>
+                <div class="headerButton">
+                    <a onClick="showNav()">
+                        <img id="navButton" src="/images/navButton.png"  alt="nav button"/>
+                    </a>
+                </div>
+            </div>
+            <div id="navContainer" class="container">
+                <a href="/en/" id="logo">
+                    <nav aria-label="primary">
+                        <ul class="list-divider-pipe">
+                            <li>
+                                <a href="/en/about.html">about</a>
+                            </li>
+                            <li>
+                                <a href="/en/index.html">spots</a>
+                            </li>
+                            <li>
+                                <a href="/en/map.html">map</a>
+                            </li>
+                            <li>
+                                <a href="/en/get-involved.html">get involved</a>
+                            </li>
+                            <li>
+                                <a href="/en/contact.html">contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </a>
+            </div>
+        </header>
+    </div>
+
+    <div id="main">
+        <div id="pixlee_container" class="container" style="border: none;"></div>
+    </div>
+    <script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'w1tCLBDgU5Dijw14hfAG'});Pixlee.addSimpleWidget({widgetId:'31413'});};</script>
+    <script src="//instafeed.assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>
+</body>
+</html>
