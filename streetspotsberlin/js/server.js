@@ -21,7 +21,7 @@ http.createServer((request, response) => {
     }
     else {
         console.log(pathname)
-        filename = path.join(process.cwd(), pathname)
+        filename = path.join(process.cwd(), "/" + pathname)
     }
     
     try{
