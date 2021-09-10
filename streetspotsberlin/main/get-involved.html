@@ -1,0 +1,118 @@
+﻿﻿<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>welcome to streetspotsberlin</title>
+    <link href="http://localhost:8080/style.css" rel="stylesheet" type="text/css" />
+    
+    <!-- JS -->
+    <script src="http://localhost:8080/js/main.js"></script>
+    <script type="text/javascript" src="/js/submit-spot-form.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_SldocsQuZHEEn8AbBTh8y");
+        })();
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <div id="header">
+        <div class="headerButton">
+            <a id="language-image" onClick="changeLanguage()">
+                <img lang="en" class="langItem" src="/images/en.png" alt="en flag"/>
+                <img lang="de" class="langItem" src="/images/de.png" alt="de flag"/>
+            </a>
+        </div>
+        <div>
+            <img id="ssbLogo" src="/images/logo.png" alt="streetspotsberlin"/>
+        </div>
+        <div class="headerButton">
+            <a onClick="showNav()">
+                <img id="navButton" src="/images/navButton.png"  alt="nav button"/>
+            </a>
+        </div>
+    </div>
+    <div id="navContainer" class="container">
+        <nav aria-label="primary" lang="en" class="langItem">
+            <ul class="list-divider-pipe">
+                <li>
+                    <a href="/about.html">about</a>
+                </li>
+                <li>
+                    <a href="/index.html">spots</a>
+                </li>
+                <li>
+                    <a href="/map.html">map</a>
+                </li>
+                <li>
+                    <a href="/get-involved.html">get involved</a>
+                </li>
+                <li>
+                    <a href="/contact.html">contact</a>
+                </li>
+            </ul>
+        </nav>
+        <nav aria-label="primary" lang="de" class="langItem">
+            <ul class="list-divider-pipe">
+                <li>
+                    <a href="/about.html">ueber</a>
+                </li>
+                <li>
+                    <a href="/index.html">spots</a>
+                </li>
+                <li>
+                    <a href="/map.html">karte</a>
+                </li>
+                <li>
+                    <a href="/get-involved.html">hineingeraten</a>
+                </li>
+                <li>
+                    <a href="/contact.html">kontact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <div id="main">
+        <div class="container">
+            <article>
+                <div>
+                    <h2>support</h2>
+                    tag @streetspotsberlin in your clips and posts to be featured.
+                </div>
+                <br /><br /><hr />
+                <div>
+                    <h2>submit a spot</h2>
+                    <form id="submit-spot">
+                        <label>
+                            username<br />
+                            <input type="text" name="user_name">
+                        </label><br /><br />
+                        <label>
+                            your e-mail<br />
+                            <input type="email" name="user_email">
+                        </label><br /><br />
+                        <label>
+                            spot location<br />
+                            <input type="text" name="spot_location">
+                        </label><br /><br />
+                        <label>
+                            spot description<br />
+                            <input type="hidden" name="spot_description">
+                            <textarea name="message"></textarea>
+                        </label><br /><br />
+                        <input type="submit" value="Send">
+                    </form>
+
+
+                </div>
+            </article>
+        </div>
+    </div>
+</body>
+</html>
