@@ -17,7 +17,7 @@ http.createServer((request, response) => {
     var pathname = url.parse(request.url).pathname;
     var filename = "";
     if (pathname === "/"){
-        filename = "main/index.html";
+        filename = "main/about.html";
     }
     else {
         console.log(pathname)
