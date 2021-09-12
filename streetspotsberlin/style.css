@@ -71,6 +71,7 @@ nav {
     display: flex;
     flex: 1 0 auto;
     justify-content: center;
+    border-top: solid 5px #ffffff;
 }
 
 .r {
@@ -157,8 +158,11 @@ a:hover code {
 
 .divHolder {
     display: flex;
-    width: 50%;
     text-align: center;
+    margin: 0 auto;
+    width: 85%;
+    border-top: solid 5px #ffffff;
+    border-bottom: solid 5px #ffffff;
 }
 
 .content {
