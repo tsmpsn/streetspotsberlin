@@ -32,13 +32,12 @@ function setLanguage() {
 }
 
 function changeLanguage() {
-    setLanguage();
-    
     if (document.documentElement.lang == "en") {
         document.documentElement.lang = "de";
     } else {
         document.documentElement.lang = "en";
     }
+    setLanguage();
 }
 
 // Functions
