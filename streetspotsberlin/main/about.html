@@ -1,4 +1,4 @@
-﻿<html lang="en" id="loading-mask">
+﻿<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>welcome to streetspotsberlin</title>
@@ -13,7 +13,11 @@
 </head>
 
 <body>
-<header>
+<div id="loading-mask">
+    <img src="/images/ssbstreet.png" />
+</div>
+<div id="all">
+    <header>
     <div id="header">
         <div class="headerButton">
             <a id="language-image" onClick="changeLanguage()">
@@ -71,7 +75,7 @@
         </nav>
     </div>
 </header>
-<div id="main" class="r">
+    <div id="main" class="r">
         <div class="container">
             <article>
                 goals:
@@ -130,5 +134,6 @@
             </article>
         </div>
     </div>
+</div>
 </body>
 </html>

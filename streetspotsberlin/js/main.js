@@ -1,5 +1,9 @@
 ﻿window.onload = function() {
     setLanguage();
+    let lm = document.getElementById('loading-mask');
+    lm.style.display = 'none';
+    let all = document.getElementById('all');
+    all.style.display = 'block';
 }
 
 // Navigation

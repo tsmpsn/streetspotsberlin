@@ -3,7 +3,7 @@ html {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-body  {
+body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -12,7 +12,13 @@ body  {
 }
 
 #loading-mask {
-    /*display: none;*/
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+#all {
+    display: none;
 }
 
 /* Language */
@@ -168,5 +174,6 @@ a:hover code {
 .content {
     background-color: #658178;
     width: 85%;
+    height: 50%;
     margin: 0 auto;
 }
