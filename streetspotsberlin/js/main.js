@@ -18,7 +18,6 @@ function showNav() {
 }
 
 function setLanguage() {
-    console.log("ran");
     let language = document.documentElement.lang;
     let arr_elms = [];
 

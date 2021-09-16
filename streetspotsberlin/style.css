@@ -98,7 +98,7 @@ nav {
 
 .container {
     width: 100%;
-    max-width: 980px;
+    max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
     display: flex;
@@ -118,17 +118,19 @@ nav {
 
 .list-divider-pipe {
     margin: 0;
-    padding: 0
+    padding: 0;
+    width: 1200px;
 }
 
 .list-divider-pipe li {
-    display: inline-block
+    display: inline-block;
+    width: 13%;
 }
 
-.list-divider-pipe li+li::before {
+.list-divider-pipe li+h2::before {
     content: "|";
     padding: 0 .3em 0 .1em;
-    color: #999
+    color: #f2f2f2;
 }
 
 @media screen and (max-width: 480px) {
@@ -143,13 +145,12 @@ nav {
 }
 
 a {
-    color: #668178;
-}
-a:link,a:active {
     color: #f2f2f2;
+}
+
+a:link {
     text-decoration: none;
     border-radius: 2px;
-    font-size: 150%;
 }
 
 nav a:hover {
@@ -160,6 +161,11 @@ nav a:hover {
 a:hover code {
     background-color: transparent;
     color: #fff
+}
+
+.active {
+    border-bottom: solid 10px #658178;
+    border-radius: 5%;
 }
 
 .divHolder {
@@ -176,4 +182,12 @@ a:hover code {
     width: 85%;
     height: 50%;
     margin: 0 auto;
+    color: #f2f2f2;
+}
+
+/* Map */
+#map {
+    text-align: center;
+    width: 100%;
+    height: 720px;
 }
