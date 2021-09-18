@@ -18,23 +18,40 @@ function showNav() {
 }
 
 function setLanguage() {
-    let language = document.documentElement.lang;
+    let language = localStorage.getItem('lang');
+    if (language == null) {
+        language = document.documentElement.lang;
+    }
     let arr_elms = [];
 
     arr_elms = document.getElementsByClassName("langitem");
     for (var i = 0; i < arr_elms.length; i++) {
-        if(arr_elms[i].getAttribute("lang") != language)
-            arr_elms[i].style.display = 'block';
-        else
+        if (arr_elms[i].getAttribute("lang") != language)
             arr_elms[i].style.display = 'none';
+        else
+            arr_elms[i].style.display = 'block';
     }
 }
 
 function changeLanguage() {
-    if (document.documentElement.lang == "en") {
-        document.documentElement.lang = "de";
+    var language = localStorage.getItem('lang')
+    if (language !== null) {
+        
+        if (language === "en") {
+            document.documentElement.lang = "de";
+            localStorage.setItem('lang', 'de')
+        } else {
+            document.documentElement.lang = "en";
+            localStorage.setItem('lang', 'en')
+        }
     } else {
-        document.documentElement.lang = "en";
+        if (document.documentElement.lang === "en") {
+            document.documentElement.lang = "de";
+            localStorage.setItem('lang', 'de')
+        } else {
+            document.documentElement.lang = "en";
+            localStorage.setItem('lang', 'en')
+        }
     }
     setLanguage();
 }
